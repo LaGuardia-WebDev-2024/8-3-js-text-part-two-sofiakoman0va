@@ -6,6 +6,12 @@ void setup(){
 //🟢Draw Function - Runs on Repeat
 draw = function(){  
   background(255, 255, 255);
-  fill(255, 0, 255);
-  ellipse(36, 45, 12, 12); 
+  fill(mouseX, mouseY, 0);
+  textSize(40);
+  var X = mouseX;
+  var Y = mouseY;
+  var message = X + "," + Y;
+  ellipse(mouseX, mouseY, 12, 12);
+  text(message, mouseX, mouseY);
+   
 };
